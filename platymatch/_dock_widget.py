@@ -2,9 +2,8 @@ import SimpleITK as sitk
 import csv
 import numpy as np
 import tifffile
-from PyQt5.QtCore import Qt
+from qtpy.QtCore import Qt
 from napari.qt.threading import thread_worker
-from napari_plugin_engine import napari_hook_implementation
 from qtpy.QtWidgets import QWidget, QGridLayout, QVBoxLayout, QPushButton, QCheckBox, QLabel, QComboBox, QLineEdit, \
     QFileDialog, QProgressBar
 from scipy.optimize import linear_sum_assignment
@@ -1164,7 +1163,6 @@ class EvaluateMetrics(QWidget):
 #         pass
 
 
-@napari_hook_implementation
 def napari_experimental_provide_dock_widget():
     return [DetectNuclei, EstimateTransform, EvaluateMetrics]
     #return [DetectNuclei, EstimateTransform, EvaluateMetrics, NonLinearTransform]
