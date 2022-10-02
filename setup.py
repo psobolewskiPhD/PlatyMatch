@@ -53,9 +53,9 @@ setup(
         'License :: OSI Approved :: BSD License',
     ],
     entry_points={
-             "napari.manifest": [
-                 "PlatyMatch = platymatch:napari.yaml",
-             ],
-         },
+        "napari.manifest": [
+            "PlatyMatch = platymatch:napari.yaml",
+        ],
+    },
     package_data={"platymatch": ["napari.yaml"]},
 )
