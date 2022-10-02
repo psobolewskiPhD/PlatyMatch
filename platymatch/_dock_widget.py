@@ -2,7 +2,7 @@ import SimpleITK as sitk
 import csv
 import numpy as np
 import tifffile
-from qtpy.QtCore import Qt
+from PyQt5.QtCore import Qt
 from napari.qt.threading import thread_worker
 from qtpy.QtWidgets import QWidget, QGridLayout, QVBoxLayout, QPushButton, QCheckBox, QLabel, QComboBox, QLineEdit, \
     QFileDialog, QProgressBar
