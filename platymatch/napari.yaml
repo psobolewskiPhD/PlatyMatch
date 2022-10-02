@@ -1,0 +1,20 @@
+name: PlatyMatch
+schema_version: 0.1.0
+contributions:
+  commands:
+  - id: PlatyMatch.DetectNuclei
+    title: Create Detect Nuclei
+    python_name: platymatch._dock_widget:DetectNuclei
+  - id: PlatyMatch.EstimateTransform
+    title: Create Estimate Transform
+    python_name: platymatch._dock_widget:EstimateTransform
+  - id: PlatyMatch.EvaluateMetrics
+    title: Create Evaluate Metrics
+    python_name: platymatch._dock_widget:EvaluateMetrics
+  widgets:
+  - command: PlatyMatch.DetectNuclei
+    display_name: Detect Nuclei
+  - command: PlatyMatch.EstimateTransform
+    display_name: Estimate Transform
+  - command: PlatyMatch.EvaluateMetrics
+    display_name: Evaluate Metrics
